@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <h1>Welcome to பெயர் அர்த்தம்</h1>
+    <h1>Search Results for '{{ name }}'</h1>
+    {% if name_data %}
+    <div>
+        <p><strong>Variant:</strong> {{ name_data.variant }}</p>
+        <p><strong>Meaning:</strong> {{ name_data.meaning }}</p>
+        <p> {% if name_data.type == 'M' %}👦{% else %}👧{% endif %}</p>
+        
+    </div>
+    {% else %}
+    <p>No results found.</p>
+    {% endif %}
+</body>
+
+</html>

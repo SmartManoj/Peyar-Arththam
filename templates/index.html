@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>பெயர் அர்த்தம்</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Welcome to பெயர் அர்த்தம்</h1>
+    <form action="/" method="post">
+        <input type="text" name="query" placeholder="Search for a பெயர்..." value="யுகன்">
+        <input type="submit" value="Search">
+    </form>
+    <script>
+        // form submit to /name
+        // get the name from the input
+        // redirect to /name
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.querySelector('input[name="query"]').value;
+            window.location.href = '/' + name;
+        });
+    </script>
+</body>
+</html>
