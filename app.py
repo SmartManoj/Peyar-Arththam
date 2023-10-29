@@ -10,8 +10,8 @@ def index():
 def search(name=None):
     names_data = {
         'யுகன்' : {
-            'variant': 'யுகநந்தனா',
-            'meaning': 'இவரால் பிரபஞ்சம் மகிழ்ச்சி அடையும்',
+            'root': 'கலியுகவரதன்',
+            'meaning': 'பிரபஞ்சத்தின் பாதுகாவலர்',
             'type': 'M'
         }
     }

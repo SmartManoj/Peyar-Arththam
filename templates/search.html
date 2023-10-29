@@ -11,7 +11,7 @@
     <h1>Search Results for '{{ name }}'</h1>
     {% if name_data %}
     <div>
-        <p><strong>Variant:</strong> {{ name_data.variant }}</p>
+        <p><strong>Root word:</strong> {{ name_data.root }}</p>
         <p><strong>Meaning:</strong> {{ name_data.meaning }}</p>
         <p> {% if name_data.type == 'M' %}👦{% else %}👧{% endif %}</p>
         
